@@ -116,7 +116,7 @@
     {
       "comment": "Highlights",
       "name": "nothing.notes",
-      "//must either go to end of line or another #":""
+      "//must either go to end of line or another #":"",
       "match": "( \\#+[^\\#]*\\#* *($|\\#))",
       "captures": {
         "1": {
