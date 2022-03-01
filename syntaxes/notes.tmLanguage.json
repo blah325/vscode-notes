@@ -95,7 +95,8 @@
     {
       "comment": "Ordered bullets",
       "name": "keyword.operator.notes",
-      "match": "^[ \\t]*[0-9a-z]+[\\:\\.\\)]\\)?\\s([^,\\.\"'()\\[\\]:]*\\:)?",
+      "//colon must be at end of line or only spaces follow":"",
+      "match": "^[ \\t]*[0-9a-z]+[\\:\\.\\)]\\)?\\s([^,\\.\"'()\\[\\]:]*\\: ( $))?",
       "captures": {
         "1": {
           "name": "keyword.other.notes"
@@ -115,7 +116,8 @@
     {
       "comment": "Highlights",
       "name": "nothing.notes",
-      "match": "(\\#+[^\\#]*\\#*)",
+      "//must either go to end of line or another #":""
+      "match": "( \\#+[^\\#]*\\#* *($|\\#))",
       "captures": {
         "1": {
           "name": "variable.language.notes"
@@ -125,7 +127,8 @@
     {
       "comment": "Headers",
       "name": "markup.heading.notes",
-      "match": "^([A-Za-z].*\\:)$"
+      "//allow one or mmore spaces so that heading can begin indented": "",
+      "match": "^([ A-Za-z].*\\:[ ]*)$"
     },
     {
       "comment": "Proper Markdown Headers",
@@ -140,7 +143,8 @@
     {
       "comment": "Emphasis",
       "name": "keyword.other.notes",
-      "match": "(\\*+.*?\\*+)"
+      "//require starting and ending spaces.  Also, require some character other than space after * to differentiate between algorith/code (e.g. x * y * z" :"",
+      "match": "( \\*+[^ ]+?\\*+ )"
     },
     {
       "comment": "Arrows",

@@ -1,11 +1,11 @@
 {
   "name": "notes",
   "displayName": "Notes",
-  "description": "Syntax highlighting for simple notes in Visual Studio Code",
+  "description": "Fork of https://github.com/canadaduane/vscode-notes.  This version has minor changes to syntax ",
   "icon": "images/icon.png",
   "version": "1.2.2",
-  "publisher": "canadaduane",
-  "repository": "https://github.com/canadaduane/vscode-notes",
+  "publisher": "blah325",
+  "repository": "https://github.com/blah325/vscode-notes",
   "engines": {
     "vscode": "^1.10.0"
   },
@@ -89,7 +89,7 @@
   },
   "__metadata": {
     "id": "ccfb475f-3c67-45f3-a691-8588a006e64d",
-    "publisherDisplayName": "canadaduane",
-    "publisherId": "49b06e7f-44dd-4bc3-bf81-0c94b2c2c7f0"
+    "publisherDisplayName": "blah325",
+    "publisherId": "blah325"
   }
 }
